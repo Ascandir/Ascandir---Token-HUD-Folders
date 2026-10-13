@@ -1,0 +1,57 @@
+{
+  "THF": {
+    "Settings": {
+      "Menu": {
+        "Name": "Token-HUD-Ordner",
+        "Label": "Ordner einrichten",
+        "Hint": "Ordner mit eigenem Symbol anlegen und die Buttons des Token-HUD (auch von anderen Modulen) per Drag & Drop hineinlegen."
+      },
+      "Players": {
+        "Name": "Ordner auch für Spieler",
+        "Hint": "Wenn aktiv, sehen auch die Spieler die Ordner im Token-HUD ihrer eigenen Tokens. Sonst gelten die Ordner nur für den Spielleiter."
+      },
+      "Columns": {
+        "Name": "Buttons pro Zeile im Ordner",
+        "Hint": "Wie viele Buttons ein aufgeklappter Ordner nebeneinander zeigt, bevor er in die nächste Zeile umbricht."
+      }
+    },
+    "Core": {
+      "Visibility": "Sichtbarkeit",
+      "Combat": "Kampf",
+      "Target": "Anvisieren",
+      "Config": "Token konfigurieren",
+      "Sort": "Ebene verschieben",
+      "Effects": "Zustände",
+      "Movement": "Bewegungsart",
+      "Level": "Ebene"
+    },
+    "Config": {
+      "Title": "Token-HUD-Ordner",
+      "Pool": "Verfügbare Buttons",
+      "PoolHint": "Ziehe Buttons in einen Ordner. Doppelklick auf einen Button im Ordner legt ihn zurück. Neue Buttons erscheinen hier, sobald du das Token-HUD einmal an einem Token geöffnet hast.",
+      "PoolEmpty": "Alle Buttons sind in Ordnern.",
+      "PoolNoneSeen": "Noch keine Buttons erfasst. Öffne einmal per Rechtsklick das HUD eines Tokens (am besten bei einem Spielercharakter und einem NSC) und öffne dieses Fenster erneut.",
+      "Folders": "Ordner",
+      "Add": "Neuer Ordner",
+      "NewFolder": "Neuer Ordner",
+      "NoFolders": "Noch keine Ordner angelegt.",
+      "NamePlaceholder": "Name des Ordners",
+      "PickImage": "Bild als Symbol wählen",
+      "Side": "Seite im HUD",
+      "SideLeft": "Links",
+      "SideRight": "Rechts",
+      "Up": "Nach oben",
+      "Down": "Nach unten",
+      "Delete": "Ordner löschen",
+      "DeleteConfirm": "Ordner „{name}“ löschen? Die Buttons darin erscheinen wieder normal im HUD.",
+      "DropHere": "Buttons hierher ziehen",
+      "Unseen": "nicht gesehen",
+      "Forget": "Nicht zugeordnete vergessen",
+      "ForgetHint": "Leert die Liste der verfügbaren Buttons, z. B. nach dem Deaktivieren eines Moduls. Sie werden beim nächsten Öffnen des HUD neu erfasst.",
+      "Forgotten": "Liste der verfügbaren Buttons geleert.",
+      "Unsaved": "Ungespeicherte Änderungen",
+      "Save": "Speichern",
+      "Saved": "Token-HUD-Ordner gespeichert."
+    }
+  }
+}

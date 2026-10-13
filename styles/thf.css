@@ -1,0 +1,318 @@
+/* ============================================================
+   Ascandir - Token HUD Folders
+   ============================================================ */
+
+/* ---------- Ordner im Token-HUD ---------- */
+
+.thf-folder {
+  position: relative;
+  pointer-events: all;
+}
+
+.thf-folder[hidden] {
+  display: none !important;
+}
+
+.thf-folder > .thf-toggle {
+  position: relative;
+  cursor: pointer;
+}
+
+.thf-folder > .thf-toggle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: none;
+  pointer-events: none;
+}
+
+.thf-folder > .thf-toggle .thf-count {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  min-width: 14px;
+  height: 14px;
+  padding: 0 3px;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  font-size: 9px;
+  line-height: 12px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.thf-folder.open > .thf-toggle,
+.thf-folder.has-active > .thf-toggle {
+  box-shadow: 0 0 8px var(--color-shadow-highlight, #ff6400);
+}
+
+.thf-folder.open > .thf-toggle {
+  border-color: var(--color-border-highlight, #ff6400);
+}
+
+.thf-flyout {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  gap: 4px;
+  padding: 4px;
+  grid-template-columns: repeat(var(--thf-cols, 4), auto);
+  background: rgba(10, 10, 10, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  pointer-events: all;
+}
+
+.thf-folder.open > .thf-flyout {
+  display: grid;
+}
+
+/* Rechte Spalte klappt nach rechts auf, linke nach links. */
+.col.right .thf-flyout {
+  left: calc(100% + 6px);
+}
+
+.col.left .thf-flyout {
+  right: calc(100% + 6px);
+}
+
+.thf-flyout > * {
+  margin: 0 !important;
+}
+
+/* ---------- Einstellungsfenster ---------- */
+
+.thf-config .window-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.thf-config .thf-layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 10px;
+  min-height: 0;
+}
+
+.thf-config section {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.thf-config h3 {
+  margin: 0 0 4px;
+  border-bottom: 1px solid var(--color-border-light-tertiary, #7a7971);
+  font-size: 1.1em;
+}
+
+.thf-config .thf-hint {
+  margin: 0 0 6px;
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+.thf-config .thf-pool > .thf-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.thf-config .thf-folders-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.thf-config .thf-folders-head h3 {
+  flex: 1;
+}
+
+.thf-config .thf-folders-head button {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.thf-config .thf-cards {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 4px;
+}
+
+.thf-config .thf-card {
+  border: 1px solid var(--color-border-light-tertiary, #7a7971);
+  border-radius: 6px;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.thf-config .thf-card-head {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.thf-config .thf-card-head input.thf-name {
+  flex: 1 1 140px;
+}
+
+.thf-config .thf-card-head input.thf-icon {
+  flex: 1 1 160px;
+}
+
+.thf-config .thf-card-head select {
+  flex: 0 0 90px;
+}
+
+.thf-config .thf-card-head button {
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  line-height: 1;
+}
+
+.thf-config .thf-preview {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: 1px solid var(--color-border-light-tertiary, #7a7971);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.thf-config .thf-preview img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border: none;
+}
+
+.thf-config .thf-list {
+  list-style: none;
+  margin: 0;
+  padding: 4px;
+  min-height: 40px;
+  border: 1px dashed var(--color-border-light-tertiary, #7a7971);
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 4px;
+}
+
+.thf-config .thf-pool .thf-list {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.thf-config .thf-list.over {
+  border-color: var(--color-border-highlight, #ff6400);
+  background: rgba(255, 100, 0, 0.08);
+}
+
+.thf-config .thf-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 6px;
+  border: 1px solid var(--color-border-light-tertiary, #7a7971);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  cursor: grab;
+  user-select: none;
+}
+
+.thf-config .thf-item.dragging {
+  opacity: 0.4;
+}
+
+.thf-config .thf-item.unseen {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.thf-config .thf-item-icon {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.thf-config .thf-item-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  border: none;
+}
+
+.thf-config .thf-text-icon {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.thf-config .thf-item-label {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.thf-config .thf-item-side {
+  font-size: 0.75em;
+  opacity: 0.65;
+}
+
+.thf-config .thf-empty {
+  padding: 6px;
+  opacity: 0.6;
+  font-style: italic;
+  list-style: none;
+}
+
+.thf-config .thf-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.thf-config .thf-footer button {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.thf-config .thf-dirty {
+  flex: 1;
+  text-align: right;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.thf-config .thf-primary {
+  font-weight: bold;
+}
+
+.thf-config .thf-danger:hover {
+  color: #c33;
+}

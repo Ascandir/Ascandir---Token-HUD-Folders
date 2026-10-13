@@ -1,0 +1,57 @@
+{
+  "THF": {
+    "Settings": {
+      "Menu": {
+        "Name": "Token HUD Folders",
+        "Label": "Set up folders",
+        "Hint": "Create folders with their own icon and drag the Token HUD buttons (including those from other modules) into them."
+      },
+      "Players": {
+        "Name": "Folders for players too",
+        "Hint": "If enabled, players also see the folders in the Token HUD of their own tokens. Otherwise folders only apply to the GM."
+      },
+      "Columns": {
+        "Name": "Buttons per row in a folder",
+        "Hint": "How many buttons an opened folder shows side by side before wrapping to the next row."
+      }
+    },
+    "Core": {
+      "Visibility": "Visibility",
+      "Combat": "Combat",
+      "Target": "Target",
+      "Config": "Configure Token",
+      "Sort": "Sort",
+      "Effects": "Status Effects",
+      "Movement": "Movement Action",
+      "Level": "Level"
+    },
+    "Config": {
+      "Title": "Token HUD Folders",
+      "Pool": "Available buttons",
+      "PoolHint": "Drag buttons into a folder. Double-click a button inside a folder to put it back. New buttons appear here once you have opened the Token HUD on a token.",
+      "PoolEmpty": "All buttons are in folders.",
+      "PoolNoneSeen": "No buttons recorded yet. Right-click a token once to open its HUD (ideally a player character and an NPC), then reopen this window.",
+      "Folders": "Folders",
+      "Add": "New folder",
+      "NewFolder": "New folder",
+      "NoFolders": "No folders yet.",
+      "NamePlaceholder": "Folder name",
+      "PickImage": "Choose an image as icon",
+      "Side": "Side of the HUD",
+      "SideLeft": "Left",
+      "SideRight": "Right",
+      "Up": "Move up",
+      "Down": "Move down",
+      "Delete": "Delete folder",
+      "DeleteConfirm": "Delete folder \"{name}\"? Its buttons will appear normally in the HUD again.",
+      "DropHere": "Drag buttons here",
+      "Unseen": "not seen",
+      "Forget": "Forget unassigned",
+      "ForgetHint": "Clears the list of available buttons, e.g. after disabling a module. They are recorded again the next time the HUD opens.",
+      "Forgotten": "List of available buttons cleared.",
+      "Unsaved": "Unsaved changes",
+      "Save": "Save",
+      "Saved": "Token HUD folders saved."
+    }
+  }
+}
