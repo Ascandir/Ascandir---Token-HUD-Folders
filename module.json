@@ -2,7 +2,7 @@
   "id": "ascandir-token-hud-folders",
   "title": "Ascandir - Token HUD Folders",
   "description": "Der Spielleiter legt Ordner mit eigenen Symbolen im Token-HUD (Rechtsklick-Menü am Token) an und sortiert die Buttons hinein – auch die Buttons anderer Module.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
     {
       "name": "Ascandir"

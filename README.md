@@ -16,7 +16,7 @@ Getestet mit Foundry v14.368 (ab v13 lauffähig). Funktioniert systemunabhängig
 
 1. Modul in der Welt aktivieren.
 2. Einmal per Rechtsklick das HUD eines Tokens öffnen – am besten bei einem Spielercharakter und einem NSC. Dabei merkt sich das Modul alle Buttons, die es dort findet.
-3. **Spieleinstellungen → Token HUD Folders → Ordner einrichten** öffnen (nur Spielleiter).
+3. **Spieleinstellungen → Ascandir - Token HUD Folders → Ordner einrichten** öffnen (nur Spielleiter).
 4. Mit **Neuer Ordner** Ordner anlegen, Namen und Symbol vergeben und festlegen, ob der Ordner links oder rechts im HUD sitzt.
    - Symbol: entweder eine Font-Awesome-Klasse wie `fa-solid fa-dragon` (Vorschläge erscheinen beim Tippen) oder über den Bild-Button ein eigenes Bild.
 5. Buttons aus der linken Liste per Drag & Drop in die Ordner ziehen. Doppelklick auf einen Button im Ordner legt ihn zurück.

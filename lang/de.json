@@ -2,7 +2,7 @@
   "THF": {
     "Settings": {
       "Menu": {
-        "Name": "Token-HUD-Ordner",
+        "Name": "Ascandir - Token HUD Folders",
         "Label": "Ordner einrichten",
         "Hint": "Ordner mit eigenem Symbol anlegen und die Buttons des Token-HUD (auch von anderen Modulen) per Drag & Drop hineinlegen."
       },
@@ -26,7 +26,7 @@
       "Level": "Ebene"
     },
     "Config": {
-      "Title": "Token-HUD-Ordner",
+      "Title": "Ascandir - Token HUD Folders",
       "Pool": "Verfügbare Buttons",
       "PoolHint": "Ziehe Buttons in einen Ordner. Doppelklick auf einen Button im Ordner legt ihn zurück. Neue Buttons erscheinen hier, sobald du das Token-HUD einmal an einem Token geöffnet hast.",
       "PoolEmpty": "Alle Buttons sind in Ordnern.",
@@ -51,7 +51,7 @@
       "Forgotten": "Liste der verfügbaren Buttons geleert.",
       "Unsaved": "Ungespeicherte Änderungen",
       "Save": "Speichern",
-      "Saved": "Token-HUD-Ordner gespeichert."
+      "Saved": "Ascandir - Token HUD Folders: gespeichert."
     }
   }
 }
