@@ -165,10 +165,11 @@ function rememberButtons(found) {
   if (!game.user.isGM) return;
   const known = getKnown();
   for (const { el, key } of found) {
-    const entry = { label: readLabel(el, key), icon: readIcon(el), side: el.dataset.thfSide };
-    const old = known[key];
-    if (old && old.label === entry.label && old.side === entry.side && old.icon?.value === entry.icon.value) continue;
-    pendingKnown[key] = entry;
+    // Schon bekannt? Dann nicht erneut speichern – viele Buttons wechseln Text/Symbol je nach Zustand
+    // (z. B. „Versteckt+ an/aus“), und jedes Speichern wäre ein Schreibzugriff, der an alle Spieler geht.
+    const old = known[key] ?? pendingKnown[key];
+    if (old?.label && old.icon && old.side === el.dataset.thfSide) continue;
+    pendingKnown[key] = { label: readLabel(el, key), icon: readIcon(el), side: el.dataset.thfSide };
   }
   if (Object.keys(pendingKnown).length) saveKnown();
 }
