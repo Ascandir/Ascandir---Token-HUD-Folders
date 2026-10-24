@@ -10,7 +10,7 @@ In Foundry unter **Add-on Modules → Install Module** diese Manifest-URL einfü
 https://github.com/Ascandir/Ascandir---Token-HUD-Folders/releases/latest/download/module.json
 ```
 
-Getestet mit Foundry v14.368 (ab v13 lauffähig). Funktioniert systemunabhängig, also auch mit dnd5e 6.0.6.
+Getestet mit Foundry v14.369.1 (ab v13 lauffähig). Funktioniert systemunabhängig, also auch mit dnd5e 6.0.6.
 
 ## So geht's
 
